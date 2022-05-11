@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="shell">
+        <script src="load_header.js"></script>
+        <div class="main gallery">
+            <ul>
+                <li><img src="//unsplash.it/1922/1079" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/1920/1079" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/1080/720" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/1920/1080" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/320/450" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/720/720" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/1920/1079" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/1920/1081" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/1920/1082" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/1480/720" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/1920/1078" alt="" class="gallery_item"></li>
+                <li><img src="//unsplash.it/1921/1079" alt="" class="gallery_item"></li>
+            </ul>
+
+        </div>
+        <script src="load_footer.js"></script>
+    </div>
+</body>
+</html>

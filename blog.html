@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="shell">
+        <script src="load_header.js"></script>
+        <div class="main blog">
+            <div class="article_container">
+
+                <div class="blog_item">
+
+                    <p class="blog_title">Society</p>
+                    <div class="blog_brief_retelling">
+                        <img src="img/template.jpg" alt="" class="blog_item_img">
+                        <p class="retelling_text">I will tell my opinion about today's society</p>
+                    </div>
+                </div>
+
+                <div class="blog_item">
+
+                    <p class="blog_title">Education</p>
+                    <div class="blog_brief_retelling">
+                        <img src="img/society.jpg" alt="" class="blog_item_img">
+                        <p class="retelling_text">I will tell my opinion about education and it's importance</p>
+                    </div>
+                </div>
+
+                <div class="blog_item">
+
+                    <p class="blog_title">Nature</p>
+                    <div class="blog_brief_retelling">
+                        <img src="//unsplash.it/1920/1078" alt="" class="blog_item_img">
+                        <p class="retelling_text">I will tell my opinion about nature</p>
+                    </div>
+                </div>
+
+                <div class="blog_item">
+
+                    <p class="blog_title">Rocks</p>
+                    <div class="blog_brief_retelling">
+                        <img src="//unsplash.it/1920/1080" alt="" class="blog_item_img">
+                        <p class="retelling_text">I will tell you about my rocks collection</p>
+                    </div>
+                </div>
+
+                <div class="blog_item">
+
+                    <p class="blog_title">Lorem ipsum</p>
+                    <div class="blog_brief_retelling">
+                        <img src="//unsplash.it/1920/1081" alt="" class="blog_item_img">
+                        <p class="retelling_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, blanditiis.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="load_footer.js"></script>
+    </div>
+</body>
+</html>
